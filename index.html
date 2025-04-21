@@ -4,6 +4,30 @@
     <meta charset="UTF-8">
     <title>My Task</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Adding color styling for the value column */
+        .value-cell {
+            color: #2980b9; /* Blue color for values */
+            font-weight: 500;
+        }
+        
+        /* Specific colors for different types of data */
+        .name-value {
+            color: #27ae60; /* Green for name */
+        }
+        
+        .id-value {
+            color: #8e44ad; /* Purple for ID */
+        }
+        
+        .email-value {
+            color: #c0392b; /* Red for email */
+        }
+        
+        .demographic-value {
+            color: #d35400; /* Orange for demographic data */
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -24,31 +48,31 @@
                     <tbody>
                         <tr>
                             <td>Name</td>
-                            <td style="color:#000000">Ibrahim Rada Mohamed Ibrahim</td>
+                            <td class="value-cell name-value">Ibrahim Rada Mohamed Ibrahim</td>
                         </tr>
                         <tr>
                             <td>Group</td>
-                            <td style="color:#000000">A</td>
+                            <td class="value-cell">A</td>
                         </tr>
                         <tr>
                             <td>ID</td>
-                            <td style="color:#000000">20230207</td>
+                            <td class="value-cell id-value">20230207</td>
                         </tr>
                         <tr>
                             <td>Department</td>
-                            <td style="color:#000000">Information System</td>
-                        </tr>    
+                            <td class="value-cell">Information System</td>
+                        </tr>
                         <tr>
-                            <td>Email:</td>
-                            <td style="color:#000000">IbrahimReda@gmail.com</td>
+                            <td>Email</td>
+                            <td class="value-cell email-value">IbrahimReda@gmail.com</td>
                         </tr>
                         <tr>
                             <td>Age</td>
-                            <td style="color:#000000">19</td>
+                            <td class="value-cell demographic-value">19</td>
                         </tr>
                         <tr>
                             <td>Nationality</td>
-                            <td style="color:#000000">Egyptian</td>
+                            <td class="value-cell demographic-value">Egyptian</td>
                         </tr>
                     </tbody>
                 </table>
@@ -69,7 +93,6 @@
             <p>&copy; 2025 Ibrahim Rada</p>
         </footer>
     </div>
-
     <script>
         // JavaScript to change background color when buttons are clicked
         document.querySelectorAll('.color-btn').forEach(button => {
